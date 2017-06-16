@@ -4,10 +4,91 @@
 	<title></title>
 	<!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Lora" rel="stylesheet">
     <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
+    <!-- 	Navbar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <h2 class="text-center" id="header">Pig Dice Game</h2>
+            <div class="text-center">
+            	<form class="navbar-form">
+                    <div class="form-group">
+                        <input type="text" class="form-control player" placeholder="Player 1 Name" id="player1">
+                        <input type="text" class="form-control player" placeholder="Player 2 Name" id="player2">
+                    </div>
+                <button type="button" onclick="getData()" class="btn btn-default" id="save">SAVE</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <hr class="firstBreak">
+    <!-- 	Navbar -->
+
+
+    <!-- Show Score -->
+    <div class="container">
+        <div class="row">
+    	    <div class="col-sm-4">
+    	    	<div class="text-center">
+    	    	    <h3 class="nameTag">Player 1:</h3>
+    	    		<h3 class="playerName">Leroy Omondi</h3>
+    	    		<br>
+    	    		<h1>
+    	    		    <span class="score">76</span>
+    	    		</h1>
+    	    	</div>
+    	    </div>
+    	    <div class="col-sm-4">
+    	        <div class="text-center">
+    	    	    <img class="img-responsive" src="images/pig.png" alt="Pig" height="200" width="200" id="pig">
+    	        </div>
+    	    </div>
+    	    <div class="col-sm-4">
+    	    	<div class="text-center">
+    	    	    <h3 class="nameTag">Player 2:</h3>
+    	    		<h3 class="playerName">Kanye West</h3>
+    	    		<br>
+    	    		<h1>
+    	    		    <span class="score">98</span>
+    	    		</h1>
+    	    	</div>
+    	    </div>
+    	</div>
+    </div>
+    <hr class="firstBreak">
+    <!-- Show Score -->
+
+
+    <!-- Actual Game -->
+    <div class="container">
+    	<div class="row">
+    		<div class="col-sm-2"></div>
+    		<div class="col-sm-4">
+    			<div class="text-center">
+    				<h2 class="nameTag">Player 1:</h2>
+    				<h1 class="dice">3</h1>
+    				<button class="btn roll">Roll Dice</button>
+    				<button class="btn roll">Pass Turn</button>
+    			</div>
+    		</div>
+    		<div class="col-sm-4">
+    			<div class="text-center">
+    				<h2 class="nameTag">Player 2:</h2>
+    				<h1 class="dice">0</h1>
+    				<button class="btn roll">Roll Dice</button>
+    				<button class="btn roll">Pass Turn</button>
+    			</div>
+    		</div>
+    		<div class="col-sm-2"></div>
+    	</div>
+    </div>
+    <!-- Actual Game -->
+
+
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled JavaScript -->

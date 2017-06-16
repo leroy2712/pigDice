@@ -1,3 +1,94 @@
+/*font-family: 'Lora', serif;
+font-family: 'Josefin Sans', sans-serif;*/
+
 body {
-    background-image: url("../images/");
+    background-image: url("../images/zig.png");
+    font-family: 'Josefin Sans', sans-serif;
 }
+
+/*Navbar*/
+.navbar {
+    background-color: transparent;
+	border: none;
+}
+
+#header {
+	color: #ffade3;
+	font-family: 'Lora', serif;
+	font-size: 3em;
+}
+
+.player {
+	height: 50px;
+	font-size: 1.5em;
+	border-radius: 0px;
+	border-color: #ffffff;
+}
+
+#save {
+	height: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size: 1.5em;
+	font-weight: 900;
+	border-radius: 0px;
+    color: #ffffff;
+    background-color: #ffade3;
+    padding-top: auto;
+    padding-bottom: auto;
+    border: 2px solid #ffade3;
+}
+
+#save:hover {
+	border: 2px solid #ffffff;
+}
+
+.firstBreak {
+	color: #ffade3;
+}
+/*Navbar*/
+
+/*Score*/
+#pig {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px; 
+}
+
+.nameTag {
+	color: #ffffff;
+}
+
+.score {
+	background-color: #ffffff;
+	font-size: 4em;
+	padding: 10px;
+	border-radius: 10px;
+	color: #bf2626;
+}
+
+.playerName {
+	color: #ffade3;
+}
+/*Score*/
+
+/* GamePlay */
+.dice {
+	color: #ffade3;
+	font-size: 3em;
+}
+
+.roll {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 0px;
+	color: #000000;
+	background-color: #ffade3;
+	border: 2px solid #ffade3;
+	font-size: 1.5em;
+}
+
+.roll:hover {
+	border: 2px solid #ffffff;
+}
+/* GamePlay */
