@@ -35,7 +35,7 @@
     	    <div class="col-sm-4">
     	    	<div class="text-center">
     	    	    <h3 class="nameTag">Player 1:</h3>
-    	    		<h3 class="playerName">Leroy Omondi</h3>
+    	    		<h3 class="playerName" id="playerNameOne"></h3>
     	    		<br>
     	    		<h1>
     	    		    <span class="score">0</span>
@@ -50,7 +50,7 @@
     	    <div class="col-sm-4">
     	    	<div class="text-center">
     	    	    <h3 class="nameTag">Player 2:</h3>
-    	    		<h3 class="playerName">Kanye West</h3>
+    	    		<h3 class="playerName" id="playerNameTwo"></h3>
     	    		<br>
     	    		<h1>
     	    		    <span class="score">0</span>
@@ -66,24 +66,27 @@
     <!-- Actual Game -->
     <div class="container">
     	<div class="row">
-    		<div class="col-sm-2"></div>
+    		<div class="col-sm-1"></div>
     		<div class="col-sm-4">
     			<div class="text-center">
     				<h2 class="nameTag">Player 1:</h2>
-    				<h1 class="dice">0</h1>
-    				<button class="btn roll">Roll Dice</button>
-    				<button class="btn roll">Pass Turn</button>
+    				<button class="btn roll p1 rollDice" disabled>Roll Dice</button>
+    				<button class="btn roll p1 passTurn" disabled>Pass Turn</button>
+    			</div>
+    		</div>
+    		<div class="col-sm-2">
+    			<div class="text-center">
+    				<h1 class="dice" id="score">0</h1>
     			</div>
     		</div>
     		<div class="col-sm-4">
     			<div class="text-center">
     				<h2 class="nameTag">Player 2:</h2>
-    				<h1 class="dice">0</h1>
-    				<button class="btn roll">Roll Dice</button>
-    				<button class="btn roll">Pass Turn</button>
+    				<button class="btn roll p2 rollDice" disabled>Roll Dice</button>
+    				<button class="btn roll p2 passTurn" disabled>Pass Turn</button>
     			</div>
     		</div>
-    		<div class="col-sm-2"></div>
+    		<div class="col-sm-1"></div>
     	</div>
     </div>
     <!-- Actual Game -->
