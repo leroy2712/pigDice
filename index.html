@@ -37,7 +37,7 @@
     	    	    <h3 class="nameTag">Player 1:</h3>
     	    		<h3 class="playerName" id="playerNameOne"></h3>
     	    		<br>
-    	    		<h1>
+    	    		<h1 id="score1">
     	    		    <span class="score">0</span>
     	    		</h1>
     	    	</div>
@@ -52,7 +52,7 @@
     	    	    <h3 class="nameTag">Player 2:</h3>
     	    		<h3 class="playerName" id="playerNameTwo"></h3>
     	    		<br>
-    	    		<h1>
+    	    		<h1 id="score2">
     	    		    <span class="score">0</span>
     	    		</h1>
     	    	</div>
@@ -68,10 +68,10 @@
     	<div class="row">
     		<div class="col-sm-1"></div>
     		<div class="col-sm-4">
-    			<div class="text-center">
+    			<div class="text-center" id="p1">
     				<h2 class="nameTag">Player 1:</h2>
-    				<button class="btn roll p1 rollDice" disabled>Roll Dice</button>
-    				<button class="btn roll p1 passTurn" disabled>Pass Turn</button>
+    				<button class="btn roll p1 rollDice">Roll Dice</button>
+    				<button class="btn roll p1 passTurn">Pass Turn</button>
     			</div>
     		</div>
     		<div class="col-sm-2">
@@ -80,13 +80,20 @@
     			</div>
     		</div>
     		<div class="col-sm-4">
-    			<div class="text-center">
+    			<div class="text-center" id="p2">
     				<h2 class="nameTag">Player 2:</h2>
-    				<button class="btn roll p2 rollDice" disabled>Roll Dice</button>
-    				<button class="btn roll p2 passTurn" disabled>Pass Turn</button>
+    				<button class="btn roll p2 rollDice">Roll Dice</button>
+    				<button class="btn roll p2 passTurn">Pass Turn</button>
     			</div>
     		</div>
     		<div class="col-sm-1"></div>
+    	</div>
+    	<div class="row">
+    		<div class="col-sm-3"></div>
+    		<div class="col-sm-6">
+    			<h2 class="text-center" id="victory"></h2>
+    		</div>
+    		<div class="col-sm-3"></div>
     	</div>
     </div>
     <!-- Actual Game -->
