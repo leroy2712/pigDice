@@ -41,6 +41,11 @@ $(document).ready(function(){
         }
     });
 
+    $("#p1 > .rollDice + .passTurn").click(function(){
+        $(".p1").attr("disabled", true);
+        $(".p2").attr("disabled", false);
+    });
+
     //player2 turn
     $("#p2 > .rollDice").click(function(){
         playerTotal2 = parseInt($("#score2 > .score").text());
@@ -59,5 +64,10 @@ $(document).ready(function(){
         } else {
         	$("#victory").text(playerName2.toUpperCase() + " " + "HAS WON!!");
         }
+    });
+
+    $("#p2 > .rollDice + .passTurn").click(function(){
+        $(".p2").attr("disabled", true);
+        $(".p1").attr("disabled", false);
     });
 });
