@@ -1,7 +1,6 @@
 $(document).ready(function(){
 	//create global variables
 	var diceRoll;
-	var accumulatedScore = 0;
 	var playerTotal1;
 	var playerTotal2;
 	var playerName1;
@@ -19,6 +18,7 @@ $(document).ready(function(){
     	$(".p2").attr("disabled", true);
     	$("#save").attr("disabled", true);
     });
+    //save players and start game
 
 
     //player1 turn
@@ -45,6 +45,8 @@ $(document).ready(function(){
         $(".p1").attr("disabled", true);
         $(".p2").attr("disabled", false);
     });
+    //player1 turn
+
 
     //player2 turn
     $("#p2 > .rollDice").click(function(){
@@ -70,4 +72,5 @@ $(document).ready(function(){
         $(".p2").attr("disabled", true);
         $(".p1").attr("disabled", false);
     });
+    //player2 turn
 });
